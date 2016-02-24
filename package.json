@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/stoshiya/express-prettify/issues"
   },
-  "homepage": "https://github.com/stoshiya/express-prettify#readme"
+  "homepage": "https://github.com/stoshiya/express-prettify#readme",
+  "devDependencies": {
+    "express": "^4.13.4"
+  }
 }
