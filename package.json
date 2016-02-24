@@ -1,0 +1,20 @@
+{
+  "name": "express-prettify",
+  "version": "0.0.1",
+  "description": "express middleware to send pretty printed json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stoshiya/express-prettify.git"
+  },
+  "keywords": [
+    "express",
+    "pretty",
+    "json"
+  ],
+  "author": "Toshiya SAITOH <stoshiya@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stoshiya/express-prettify/issues"
+  },
+  "homepage": "https://github.com/stoshiya/express-prettify#readme"
+}
