@@ -2,6 +2,8 @@
 
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
+[![Build Status](https://travis-ci.org/stoshiya/express-prettify.svg?branch=master)](https://travis-ci.org/stoshiya/express-prettify)
+[![Coverage Status](https://coveralls.io/repos/github/stoshiya/express-prettify/badge.svg?branch=master)](https://coveralls.io/github/stoshiya/express-prettify?branch=master)
 
 express middleware to send pretty printed json
 
@@ -27,6 +29,7 @@ app.get('/', function(req, res) {
 
 app.listen(3000);
 ```
+
     $ node app.js &
 
     $ curl http://localhost:3000?pretty
