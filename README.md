@@ -4,6 +4,7 @@
 [![NPM Downloads][downloads-image]][downloads-url]
 [![Build Status](https://travis-ci.org/stoshiya/express-prettify.svg?branch=master)](https://travis-ci.org/stoshiya/express-prettify)
 [![Coverage Status](https://coveralls.io/repos/github/stoshiya/express-prettify/badge.svg?branch=master)](https://coveralls.io/github/stoshiya/express-prettify?branch=master)
+[![Code Climate](https://codeclimate.com/github/stoshiya/express-prettify/badges/gpa.svg)](https://codeclimate.com/github/stoshiya/express-prettify)
 
 express middleware to send pretty printed json
 
