@@ -22,10 +22,10 @@
   },
   "homepage": "https://github.com/stoshiya/express-prettify#readme",
   "devDependencies": {
-    "coveralls": "^2.11.15",
-    "express": "^4.14.0",
+    "coveralls": "^2.11.16",
+    "express": "^4.14.1",
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
-    "supertest": "^2.0.1"
+    "supertest": "^3.0.0"
   }
 }
