@@ -1,0 +1,10 @@
+coverage
+test
+example
+*.tgz
+*~
+.codeclimate.yml
+.eslintignore
+.eslintrc
+.travis.yml
+
