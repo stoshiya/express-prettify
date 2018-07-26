@@ -7,4 +7,5 @@ example
 .eslintignore
 .eslintrc
 .travis.yml
+.idea
 
