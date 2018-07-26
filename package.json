@@ -7,6 +7,8 @@
     "url": "git+https://github.com/stoshiya/express-prettify.git"
   },
   "scripts": {
+    "clean": "rm -f *~ .??*~",
+    "codeclimate": "cat ./coverage/lcov.info | ./node_modules/.bin/codeclimate-test-reporter",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
     "test": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec"
   },
@@ -22,6 +24,7 @@
   },
   "homepage": "https://github.com/stoshiya/express-prettify#readme",
   "devDependencies": {
+    "codeclimate-test-reporter": "^0.5.0",
     "coveralls": "^3.0.2",
     "express": "^4.16.3",
     "istanbul": "^0.4.5",

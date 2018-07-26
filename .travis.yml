@@ -1,14 +1,16 @@
 language: node_js
 node_js:
-- '4'
-- '5'
 - '6'
-- '7'
 - '8'
-- '9'
 - '10'
-
 after_success:
- - npm run-script coveralls
-
+- npm run-script codeclimate
+- npm run-script coveralls
+addons:
+  code_climate:
+    repo_token:
+      secure: LIHWkZGnUdYD6yEL5BUQYILqw0mhKmrP5HZ9AF6ZAcHSF7YjB55czmKLCjzdtOO8qTWPUaxp2NOS5KbmNXXRhgly/FhlDV6SvR3H3ofARsH0gNwOU9z6KA/jSpMSnAn7M9Uawht7nq7lkfudYXh/dLlBdP3HEEU7vzW5+9t4BZa3QNPiYw5sQgxo9TdkhH5QzQhL1udr1zn2gJ0Si3PUyUEMYSmRVH3uiigPTkNSFL6jtzoU2Yw5D5p+9ek04qXswa+S8mFjhbdSIkSzM44i5oYJTFCN1mOSDUn11RpBeh1rZ/narNzgsq9zehe/Kv4usI8Fphk2iU099hDi/5VeMSbPPiZz6Bbm0Ydg/QUMtKvnZcbgmc+/ot1ubW7Lc8kRmU7XT2R4VUP9mXBHfN9EsU2Aj1BGZwiW0MnUrxKITtcuVIr9xyjW3xHzM5Zi40YNOmixTkAkSWJi2IQrYS/ts+6b0rdoJNjyOiejeIQiNJB7PN4N+HdihHxYE8MucRhY34YgRhv1nQR+xKlfY1US3E2Ba+DmN6NFWJJkR9SsMpsaX+7dj6zoGiePSfZov6RUtLAOp18Sl0Sy8kY7jFBhaPs+lm/0gENDPg7tFGU0cVKNIy+ZK42nVZyS1uf53w/pqz1I3il2N1WIGbirPZsQXox4gxaQFdiIbfSHcpZB1XA=
 sudo: false
+notifications:
+  slack:
+    secure: r6l2JViPbucoJJVQxMSH2Ey1il8GPb6lADgQQRjSkUnCQR5OzKtyNBBy+HqCftC5hdCloix0s3kfeI/xhV/ynrEOd+X2rAgzYu2Me58l3HAr3dneM9a90tQLxr4LaKcYVUFqe6a6vhV5fHnfoUp0IOPVQ872hnv6FHNirn4AjS3cvU31JQivW31XTTx/iSR/rwi0n/61Y303c6awG7UF0lzqwyHGfK6lMkCO16DuHB3/kJotko61LYZb/QcmEof/AyqCEs6yaJ7Jay5XXBnsMq9BwA8QcopXFVckYUo3y0ptriVaM1RlSfe1hohG+sqGgvt2HQ886FAA5TUTrcaGysdUhNqnky27jWxJTT96UnTTF2TXbbQZ53bFvJNfPDn1hwxLY91/hxZGqPmge+Om37sKnWdY/hocD9kaMy3msKTyTl6S8ieWa2A5MG/h7Mhy2M42RD+xGOJ2GMNLQ3CJXHii2Solhd4OBhCiybP9a7MIWBt9xreyu0fI45/dXxMEDsbehJB6QhQpBjIcBlSBGONKLR9gqo4WjBIU4RFaRWqPiBkxwET31LSNn+7515xHqro2dHuRWkuXnMHFYz6VIEbEnbW5+WGOSSNO5//dTp8qfCoj0CXh47EdvIfnQNy7HbK/xiMuHBl650I3P14SHFWBdvamaNaxgh4VswacKbI=
