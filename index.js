@@ -3,6 +3,7 @@
 /**
  * pretty json middleware.
  *
+ *  - `always`: prettify response without query, if it's specified true. (default: false)
  *  - `query`: query-string parameter name for pretty response. (default: none)
  *  - `spaces`: pretty print spaces. (default: 2)
  *
@@ -11,11 +12,12 @@
  */
 module.exports = function(option) {
   option = option || {};
+  var always = option.always || false;
   var query = option.query;
   var spaces = option.spaces || 2;
 
   return function(req, res, next) {
-    if (typeof req.query[query] !== 'undefined') {
+    if (always === true || typeof req.query[query] !== 'undefined') {
       res.json = function(body) {
         // content-type
         if (!res.get('Content-Type')) {

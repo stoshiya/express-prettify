@@ -18,6 +18,22 @@ var query = generateRandomString();
 var json = { hello: 'world', body: 'json' };
 
 describe('express-prettify', function() {
+  it('responds pretty printed json always without query.', function(callback) {
+    var app = express();
+    app.use(pretty({ always: true }));
+    app.get(path, function(req, res) {
+      res.json(json);
+    });
+
+    request(app)
+      .get(path)
+      .expect('Content-Type', /application\/json/)
+      .end(function(err, res) {
+        assert.strictEqual(res.text, JSON.stringify(json, null, 2));
+        callback(err);
+      });
+  });
+
   it('responds pretty printed json with 2 spaces.', function(callback) {
     var app = express();
     app.use(pretty({ query: query }));
