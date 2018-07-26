@@ -1,14 +1,16 @@
 language: node_js
 node_js:
-- '4'
-- '5'
 - '6'
-- '7'
 - '8'
-- '9'
 - '10'
 
 after_success:
+ - npm run-script codeclimate
  - npm run-script coveralls
+
+addons:
+  code_climate:
+    repo_token:
+      secure: "LIHWkZGnUdYD6yEL5BUQYILqw0mhKmrP5HZ9AF6ZAcHSF7YjB55czmKLCjzdtOO8qTWPUaxp2NOS5KbmNXXRhgly/FhlDV6SvR3H3ofARsH0gNwOU9z6KA/jSpMSnAn7M9Uawht7nq7lkfudYXh/dLlBdP3HEEU7vzW5+9t4BZa3QNPiYw5sQgxo9TdkhH5QzQhL1udr1zn2gJ0Si3PUyUEMYSmRVH3uiigPTkNSFL6jtzoU2Yw5D5p+9ek04qXswa+S8mFjhbdSIkSzM44i5oYJTFCN1mOSDUn11RpBeh1rZ/narNzgsq9zehe/Kv4usI8Fphk2iU099hDi/5VeMSbPPiZz6Bbm0Ydg/QUMtKvnZcbgmc+/ot1ubW7Lc8kRmU7XT2R4VUP9mXBHfN9EsU2Aj1BGZwiW0MnUrxKITtcuVIr9xyjW3xHzM5Zi40YNOmixTkAkSWJi2IQrYS/ts+6b0rdoJNjyOiejeIQiNJB7PN4N+HdihHxYE8MucRhY34YgRhv1nQR+xKlfY1US3E2Ba+DmN6NFWJJkR9SsMpsaX+7dj6zoGiePSfZov6RUtLAOp18Sl0Sy8kY7jFBhaPs+lm/0gENDPg7tFGU0cVKNIy+ZK42nVZyS1uf53w/pqz1I3il2N1WIGbirPZsQXox4gxaQFdiIbfSHcpZB1XA="
 
 sudo: false
