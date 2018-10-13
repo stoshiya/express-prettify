@@ -1,6 +1,6 @@
 {
   "name": "express-prettify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "express middleware to send pretty printed json",
   "repository": {
     "type": "git",
