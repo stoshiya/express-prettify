@@ -23,7 +23,7 @@ module.exports = function(option) {
         if (!res.get('Content-Type')) {
           res.set('Content-Type', 'application/json');
         }
-        res.send(JSON.stringify(body, null, spaces));
+        return res.send(JSON.stringify(body, null, spaces));
       }
     }
     next();
