@@ -28,7 +28,7 @@
     "coveralls": "^3.0.2",
     "express": "^4.16.4",
     "istanbul": "^0.4.5",
-    "mocha": "^5.2.0",
+    "mocha": "^9.2.2",
     "supertest": "^3.3.0"
   }
 }
